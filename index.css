@@ -39,12 +39,13 @@ nav {
     justify-content: center;            /*水平置中*/
     align-items: center;                /*垂直置中*/
     background-color: rgb(209, 242, 253);
-    width: 100vw;
+    width: 100%;
 }
 
 .text {
     font-weight: bold; 
     font-size: 40px;
+    text-align: center;
 }
 
 .image-content {
@@ -81,6 +82,8 @@ nav {
     width: 100%;
     max-width: 1200px;
     padding-top: 20px;
+    margin-left: auto;          /* 使元素水平置中 */
+    margin-right: auto;         /* 使元素水平置中 */
 }
 
 .card-big {
@@ -88,6 +91,7 @@ nav {
     position: relative;
     background-image: url("pui-pui.jpg");
     border: none;
+
 }
 
 .card-small {
@@ -156,6 +160,7 @@ nav {
 
 
 
+
   
 
 
@@ -201,6 +206,8 @@ nav {
         grid-template-columns: repeat(4,1fr);
         grid-template-rows: auto;
         width: 92%;
+        margin-left: auto;
+        margin-right: auto;
 
     }
 
@@ -288,16 +295,18 @@ nav {
         display: flex;
         flex-direction: column;
         align-items: center;
+
     }
 
     .promotion {
         display: flex;
-
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .pro-con-1, .pro-con-2, .pro-con-3 {
         flex:none;
-        width:90vw
+        width:90vw;
 
     }
 
@@ -307,14 +316,16 @@ nav {
         line-height: 50px;
         font-size: 20px;
         padding-left: 5px;
+
     }
 
     .row-grid {
         display: grid;
         grid-template-columns: repeat(1,1fr);
         grid-template-rows: auto;
-        width: 92%;
-
+        width: 93%;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
     .title1 {

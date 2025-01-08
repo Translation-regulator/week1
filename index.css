@@ -51,7 +51,6 @@ nav {
 .image-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
     max-width: fit-content;
     margin-left: auto;
     margin-right: auto;
@@ -64,7 +63,7 @@ nav {
     margin-top: 30px;
     flex-wrap: wrap;
     width: 100%;                /* 占滿整個可用寬度 */
-    max-width: 1200px;          /* 設定最大寬度為1200px */
+    max-width: 100%;          /* 設定最大寬度為1200px */
     margin-left: auto;          /* 使元素水平置中 */
     margin-right: auto;         /* 使元素水平置中 */
 }
@@ -202,8 +201,8 @@ nav {
 
     .row-grid {
         display: grid;
-        grid-template-columns: repeat(4,1fr);
-        grid-template-rows: auto;
+        grid-template-columns: repeat(4, 1fr);
+        width: calc(90vw + 20px)
 
     }
 
@@ -296,8 +295,6 @@ nav {
 
     .promotion {
         display: flex;
-        margin-left: auto;
-        margin-right: auto;
     }
 
     .pro-con-1, .pro-con-2, .pro-con-3 {
@@ -318,10 +315,7 @@ nav {
     .row-grid {
         display: grid;
         grid-template-columns: repeat(1,1fr);
-        grid-template-rows: auto;
-        width: 93%;
-        margin-left: 5%;
-        margin-right: 5%;
+        width: 90vw;
     }
 
     .title1 {

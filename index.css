@@ -369,7 +369,7 @@ nav {
     }
 
     body {
-        overflow: hidden;
+        overflow: auto;
         position: relative;
     }
 
@@ -401,10 +401,6 @@ nav {
         text-align: center;
     }
 
-    .rotate {
-        transform: rotate(90deg); 
-        transition: transform 0.3s;
-    }
 
     .close {
         width: 30px;

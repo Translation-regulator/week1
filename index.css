@@ -52,6 +52,9 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .promotion {
@@ -161,9 +164,6 @@ nav {
 
 
 
-  
-
-
 /* 設定螢幕大小介於600~1200之間 */
 @media (min-width: 600px) and (max-width: 1200px) {
     .promotion {
@@ -189,7 +189,6 @@ nav {
         padding-left: 5px;
     }
 
-
     .right-nav {
         display: block;
         display: flex;               
@@ -205,9 +204,6 @@ nav {
         display: grid;
         grid-template-columns: repeat(4,1fr);
         grid-template-rows: auto;
-        width: 92%;
-        margin-left: auto;
-        margin-right: auto;
 
     }
 
@@ -419,6 +415,10 @@ nav {
         cursor: pointer;
         float: right;
 
+    }
+
+    .promotion, .row-grid {
+        grid-template-columns: repeat(auto-fit);
     }
 }
 

@@ -82,18 +82,15 @@ nav {
     grid-template-columns: repeat(auto-fill, minmax(182.5px, 1fr)); /* 自動調整寬度 */
     grid-gap: 20px;
     width: 100%;
-    max-width: 1200px;
     padding-top: 20px;
     margin-left: auto;          /* 使元素水平置中 */
     margin-right: auto;         /* 使元素水平置中 */
 }
 
 .card-big {
-
     position: relative;
     background-image: url("pui-pui.jpg");
     border: none;
-
 }
 
 .card-small {
@@ -101,6 +98,7 @@ nav {
     background-image: url("pui-pui.jpg");
     border: none;
 }
+
 
 .title1, .title6 {
     grid-column: span 2;
@@ -113,7 +111,6 @@ nav {
     position: relative; /* 確保子元素絕對定位 */
     margin: 0; /* 移除容器的外邊距 */
     padding: 0; /* 移除容器的內邊距 */
-    background-color: transparent; /* 確保容器背景是透明的 */
 }
 
 .card-image {
@@ -121,17 +118,7 @@ nav {
     height: 100%; /* 確保圖片填滿容器 */
     object-fit: cover; /* 保持圖片比例並裁切多餘部分 */
     position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.small-image {
-    position: absolute;
-    width: 100%; /* 使小圖寬度與容器一致 */
-    height: 100%; /* 使小圖高度與容器一致 */
-    object-fit: cover; /* 保持圖片比例並裁切多餘部分 */
-    clip: rect(0px, 100%, 200px, 0px); /* 剪裁範圍，保持與大圖相同高度 */
-    overflow: hidden; /* 隱藏超出容器的部分 */
+    object-position: center;
 }
 
 .star {
@@ -151,7 +138,6 @@ nav {
     font-size: 20px;
     font-weight: bold;
     padding: 10px 0;
-    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .aside-menu {
@@ -265,7 +251,7 @@ nav {
 
 
 /* 設定螢幕大小介於360~600之間 */
-@media (min-width: 360px) and (max-width: 600px) {
+@media (min-width: 250px) and (max-width: 600px) {
 
     .right-nav {
         display: none;

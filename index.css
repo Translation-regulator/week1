@@ -90,13 +90,13 @@ nav {
 .card-big {
     position: relative;
     background-image: url("pui-pui.jpg");
-    border: none;
+    background-position: center;    
 }
 
 .card-small {
     position: relative;
     background-image: url("pui-pui.jpg");
-    border: none;
+    background-position: center;  
 }
 
 
